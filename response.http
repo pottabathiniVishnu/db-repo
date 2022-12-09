@@ -1,0 +1,51 @@
+
+GET http://localhost:3000/states/
+###
+
+
+GET http://localhost:3000/states/11/
+###
+
+
+POST http://localhost:3000/districts/
+content-type: application/json
+
+{
+    "districtName": "Siddipet",
+    "stateId": 12 ,
+    "cases": 20000000 ,
+    "cured": 200000 ,
+    "active": 100000 ,
+    "deaths": 0
+}
+
+###
+
+GET http://localhost:3000/districts/400/
+###
+
+
+DELETE http://localhost:3000/districts/400/
+###
+
+
+PUT http://localhost:3000/districts/380/
+content-type: application/json 
+
+{
+    "districtName": "Nirmal",
+    "stateId": 12000 ,
+    "cases": 205678000 ,
+    "cured": 29845600 ,
+    "active": 13680 ,
+    "deaths": 2 
+}
+### 
+
+
+GET http://localhost:3000/states/20/stats/
+###
+
+
+GET http://localhost:3000/districts/2/details/
+### 
